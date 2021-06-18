@@ -1,0 +1,82 @@
+body {
+    background-color: bisque;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .circle {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 40px red, 0 0 0 43px #d3d3d3, inset 0 0 0 5px #fff,
+      inset 0 0 4px 5px black;
+    position: relative;
+  }
+  
+
+  
+  .hour {
+    top: 32px;
+    height: 105px;
+    width: 10px;
+    left: 49%;
+    background: rgb(19, 4, 4); 
+    position: absolute;   
+    box-shadow: 2px 2px 28px 2px black;
+    animation: hour 216000s infinite linear;
+    transform-origin: bottom left;
+    
+  }
+  @keyframes hour {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  .minute {
+    top: 20px;
+    height: 105px;
+    width: 5px;
+    left: 49%;
+    background: rgb(19, 4, 4); 
+    position: absolute;   
+    box-shadow: 2px 2px 28px 2px black;
+    animation: minute 3600s infinite linear;
+    transform-origin: bottom left;
+   
+  }
+  @keyframes minute {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .second {
+    top: 25px;
+    height: 100px;
+    width: 2px;
+    left: 49%;
+    background: rgb(19, 4, 4); 
+    position: absolute;   
+    box-shadow: 2px 2px 28px 2px black;
+    animation: second 60s infinite linear;
+    transform-origin: bottom left;
+    
+  }
+  
+  @keyframes second {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .clockcircle {
+    position: absolute;
+    top: 48%;
+    left: 45%;
+    width: 25px;
+    height: 25px;
+    background-color:chocolate;
+    border-radius: 50%;
+  }
