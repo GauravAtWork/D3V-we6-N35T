@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  position: relative;
+  margin: 1rem 14rem ;
+  border: 4px solid teal;
+  line-height: 1.5;
+}
+.heading {
+  padding: 0rem 1rem;
+  z-index: 1;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  position: absolute;
+  z-index: 50;
+  background-color:white;
+}
+
+.content{
+  display: flex;
+  padding: 2em;
+}
+h1 {
+  font-size: 24px;
+}
+hr {
+  text-align: center;
+}
+h2, h3, h4, p {
+  margin-bottom: 5px;
+}
+
+li {
+  margin-left: 2em;
+}
+
+.space {
+  margin-bottom: 5em;
+}
+.left {
+  padding: 1em;
+  border-right: teal 2px solid;
+}
+
+.right {
+  padding: 1em;
