@@ -1,0 +1,38 @@
+body{background-color:white}
+.border{
+
+  position: absolute;
+  left:50%;
+  top:50%;
+  border: 1px solid #DA0037;
+  width:400px;
+  height: 400px;
+  transform: translate(-50%,-50%);
+  border-radius: 5px;
+  box-shadow: 0 20px 35px rgba(0,0,0,0.3);
+}
+.pixel{
+    float: left;
+    height: 20px;
+    width:20px;
+    background-color: ;
+    border: px solid #DA0037;
+    cursor: pointer;
+    
+}
+.pixel input{
+    display: none;
+}
+.pixel label {
+    box-sizing: border-box;
+    display: block;
+    background-color: #171717;
+    width: 20px;
+    height: 20px;
+    
+    cursor: pointer;
+}
+.pixel input:checked ~ label{
+    background: #DA0037 ;
+    border-color:  #DA0037;
+}
