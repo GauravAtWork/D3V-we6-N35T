@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    /* background: #59C173; */
+    /* fallback for old browsers */
+    /* background: -webkit-linear-gradient(to right, #5D26C1, #a17fe0, #59C173); */
+    /* Chrome 10-25, Safari 5.1-6 */
+    /* background: linear-gradient(to right, #5D26C1, #a17fe0, #59C173); */
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #d5f5ff;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#app {
+    height: 100vh;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+#container {
+    position: absolute;
+    top: 150px;
+    width: 50%;
+    background-color: #f7f7f7;
+    cursor: pointer;
+    border-radius: 15px;
+    background: #6FB98F;
+    box-shadow: 0 20px 35px rgba(0,0,0,0.7);
+}
+
+.fa-plus {
+    float: right;
+}
+
+h1 {
+    background-color: #021C1E;
+    padding: 10px;
+    color: #6FB98F;
+    border-radius: 15px 15px 0px 0px;
+}
+
+#todo-input {
+    font-size: 24px;
+    padding: 10px;
+    width: 100%;
+    border: 2px solid #004445;
+    box-sizing: border-box;
+    background-color: #004445;
+}
+
+#todo-input:focus {
+    outline: none;
+    border: 2px solid #004445;
+    background-color: #fff;
+}
+
+li {
+    list-style: none;
+    padding: 10px 18px;
+    font-weight: bold;
+}
+
+span {
+    background-color: #e74c3c;
+    padding: 10px;
+    color: #fff;
+    display: none;
+    margin-right: 10px;
+}
+
+li:hover {
+    padding: 9px 0px;
+}
+
+li:hover span {
+    display: inline;
+}
+
+.completed {
+    text-decoration: line-through;
+}
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
