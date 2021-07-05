@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Drawing Board</title>
+  
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="LoaderStyle.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <script src="loader.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <!-- Loader div -->
+  <div class="se-pre-con"><script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" integrity="sha256-qM7QTJSlvtPSxVRjVWNM2OfTAz/3k5ovHOKmKXuYMO4=" crossorigin="anonymous"></script>
+    <h1 class="font-effect-outline">WhiteBoard App </h1>
+    <i class="fab fa-phoenix-squadron"></i>
+    <div class="love" >
+      <p class="font-effect-outline">Made with ❤ love by Team Blaze</p>
+    </div>
+  </div>
+<!-- Loader Div ends -->
+
+  <canvas></canvas>
+  <br />
+  <div class="controls">
+    
+    <input class="pen-color" type="color" id="html5colorpicker" value="#000001" onchange="changePenColor(this)" />
+    
+    <input class="bg-color" type="color" id="html5colorpicker" value="#fffffe" onchange="changeBgColor(this)" />
+    <div class ="main-functions">
+      <button class="eraser"><img src="images/eraser.png" height="45"/></button>
+      <button class="pen"><img src="images/brush.png.png" height="45"/></button>
+    </div>
+    
+    <button class="spray">Spray</button>
+    <button class="rectangle">Rectangle</button>
+    <button class="circle">Circle</button>
+     
+    <input type="range" name="widthSelector" id="widthSelector" value="1" min="1" max="40" step="1"
+      onchange="changeWidth(this)" />
+    <span>1</span>
+    <button id="clear"><img src="https://img.icons8.com/doodle/48/000000/recycle-bin.png" height="45"/></button>
+  </div>
+</body>
+</html>
